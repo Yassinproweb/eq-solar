@@ -23,9 +23,39 @@
 </head>
 
 <body>
-  <header class="w-full items-center justify-between px-pw py-3">
-    nav
+  <header class="fixed top-0 left-0 w-full items-center justify-between px-pw py-3">
+    <div class="w-fit items-center justify-start gap-1">
+      <img src="/assets/imgs/eqslogo.svg" alt="company logo" class="size-9">
+      <h3 class="text-xl text-g font-bold">Equator<span class="text-y">Solar</span></h3>
+    </div>
+
+    <div class="divs items-center justify-end font-bold">
+      <button id="open" class="text-3xl text-g text-center">
+        <i class="hgi hgi-stroke hgi-menu-11"></i>
+      </button>
+      <button id="close" class="text-3xl text-g text-center hidden">
+        <i class="hgi hgi-stroke hgi-cancel-01"></i>
+      </button>
+    </div>
+
+    <nav
+      class="absolute right-[5vw] top-24 w-fit flex-col items-center justify-center gap-0 px-7 py-5 rounded-2xl bg-w translate-x-72">
+      <a href="#" class="">Home</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#blog">Blog</a>
+    </nav>
   </header>
+
+  <main>
+    <section class="flex-col items-center justify-end gap-9 px-pw py-py">
+      <div class="items-center justify-center p-1.5 rounded-lg bg-f">
+        <span class="text-xs text-g font-semibold uppercase">new energy for our system</span>
+      </div>
+    </section>
+  </main>
 
   <script type="module" src="/src/main.js"></script>
 </body>

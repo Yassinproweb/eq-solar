@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --d: #263238;
+  --d: #162822;
   --g: #00796B;
   --y: #F4D35E;
-  --f: #E0F2F1;
-  --w: #F0FFF1;
+  --f: #F7E991;
+  --w: #FDFFFE;
 }
 
 * {
@@ -33,4 +33,12 @@ form,
 section,
 footer {
   display: flex;
+}
+
+section {
+  min-height: 100dvh;
+}
+
+nav {
+  box-shadow: 0 20px 25px -5px #00796B37;
 }
