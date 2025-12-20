@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --g: #358105;
-  --y: #ffbd00;
-  --b: #000000;
-  --w: #ffffff;
+  --d: #263238;
+  --g: #00796B;
+  --y: #F4D35E;
+  --f: #E0F2F1;
+  --w: #F0FFF1;
 }
 
 * {
@@ -14,8 +15,22 @@
   margin: 0;
   box-sizing: border-box;
   transition: all 350ms ease-in-out;
+  font-family: "Geist";
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--w);
+}
+
+header,
+nav,
+div,
+form,
+section,
+footer {
+  display: flex;
 }
