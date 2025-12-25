@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --d: #162822;
+  --d: #00291B;
   --g: #00796B;
-  --y: #F4D35E;
-  --f: #F7E991;
+  --y: #C7D971;
+  /* --y: #F4D35E; */
   --w: #FDFFFE;
 }
 
@@ -15,7 +17,7 @@
   margin: 0;
   box-sizing: border-box;
   transition: all 350ms ease-in-out;
-  font-family: "Geist";
+  font-family: "SUSE";
 }
 
 html {
@@ -39,6 +41,13 @@ section {
   min-height: 100dvh;
 }
 
+/* header and nav */
+header.diff {
+  border: 1px solid #00796B27;
+  box-shadow: 0 10px 15px -5px #00796B27;
+  background-color: var(--w);
+}
+
 nav {
-  box-shadow: 0 20px 25px -5px #00796B37;
+  box-shadow: 0 10px 15px -5px #00796B37;
 }

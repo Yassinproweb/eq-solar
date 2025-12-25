@@ -8,10 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        d: '#162822',
+        d: '#00291B',
         g: '#00796B',
-        y: '#F4D35E',
-        f: '#F7E991',
+        y: '#C7D971',
         w: '#FDFFFE'
       },
       padding: {
