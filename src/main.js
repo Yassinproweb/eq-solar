@@ -19,3 +19,4 @@ divs.addEventListener("click", () => {
   closeM.classList.toggle("hidden");
   nav.classList.toggle("translate-x-72");
 });
+

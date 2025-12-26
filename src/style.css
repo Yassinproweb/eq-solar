@@ -51,3 +51,12 @@ header.diff {
 nav {
   box-shadow: 0 10px 15px -5px #00796B37;
 }
+
+/* services */
+#work div .blocks {
+  transform: translateY(100%);
+}
+
+#work div:hover .blocks {
+  transform: translateY(0);
+}
