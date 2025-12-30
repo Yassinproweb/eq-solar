@@ -20,3 +20,15 @@ divs.addEventListener("click", () => {
   nav.classList.toggle("translate-x-72");
 });
 
+
+// scroll behaviour of testimonials
+const slides = document.getElementById("slides")
+
+function next() {
+  slides.scrollBy({ left: slides.clientWidth, behavior: "smooth" })
+}
+
+function prev() {
+  slides.scrollBy({ left: -slides.clientWidth, behavior: "smooth" })
+}
+

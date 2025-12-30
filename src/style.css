@@ -38,6 +38,7 @@ footer {
 }
 
 section {
+  scroll-margin-block-start: 5rem;
   min-height: 100dvh;
 }
 
@@ -53,10 +54,21 @@ nav {
 }
 
 /* services */
-#work div .blocks {
+#works>div div .blocks {
   transform: translateY(100%);
 }
 
-#work div:hover .blocks {
+#works>div div:hover .blocks {
   transform: translateY(0);
+}
+
+#works>div div .cards {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  transform: translateX(-150%);
+}
+
+#works>div div:hover .cards {
+  transform: translateX(0);
 }
