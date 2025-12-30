@@ -37,6 +37,17 @@ footer {
   display: flex;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  user-select: none;
+}
+
 section {
   scroll-margin-block-start: 5rem;
   min-height: 100dvh;
