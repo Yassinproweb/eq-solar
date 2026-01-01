@@ -349,10 +349,9 @@
         </div>
 
         <div id="customers" class="relative w-full flex-col items-start justify-start">
-          <div id="carousel"
+          <div id="slider"
             class="w-full h-full grid grid-flow-col auto-cols-[100%] gap-5 snap-x snap-mandatory overflow-x-auto">
-            <div
-              class="carousel-slide w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
+            <div class="w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
               <img src="/assets/imgs/cust-fm.jpg" alt="testmonial pic profile"
                 class="w-full aspect-[4/3] object-cover object-center">
               <div class="w-full flex-col items-start justify-between gap-5 p-5">
@@ -363,8 +362,7 @@
                 <h6 class="text-y text-xl font-medium">Agricultural Business Owner, Masaka</h6>
               </div>
             </div>
-            <div
-              class="carousel-slide w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
+            <div class="w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
               <img src="/assets/imgs/cust-ev.jpg" alt="testmonial pic profile"
                 class="w-full aspect-[4/3] object-cover object-center">
               <div class="w-full flex-col items-start justify-between gap-5 p-5">
@@ -375,8 +373,7 @@
                 <h6 class="text-y text-xl font-medium">Fleet Manager, Kampala</h6>
               </div>
             </div>
-            <div
-              class="carousel-slide w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
+            <div class="w-full h-full flex-col items-center justify-start gap-7 snap-center snap-always bg-d">
               <img src="/assets/imgs/cust-hs.jpg" alt="testmonial pic profile"
                 class="w-full aspect-[4/3] object-cover object-center">
               <div class="w-full flex-col items-start justify-between gap-5 p-5">
@@ -390,6 +387,154 @@
             </div>
           </div>
         </div>
+    </section>
+
+    <section class="w-full flex-col items-center justify-start gap-9 px-pw py-py">
+      <div id="faqs" class="w-full flex-col items-start justify-start gap-3.5">
+        <div class="w-full flex-col items-start justify-start gap-0.5">
+          <p class="text-g font-medium">// FAQs</p>
+          <h3 class="text-4xl text-d font-bold capitalize">frequently asked questions</h3>
+        </div>
+
+        <ul id="accordion" class="w-full flex flex-col items-center justify-center gap-7">
+          <li class="accordion w-full flex flex-col">
+            <label for="v1" class="w-full items-center justify-between p-3.5 rounded-t-xl bg-w border border-y z-20">
+              <h4 class="text-g font-bold">How much does a solar system cost in Uganda?</h4>
+              <span class="text-xl text-g hgi hgi-stroke hgi-add-01"></span>
+              <span class="text-xl text-g hgi hgi-stroke hgi-remove-01"></span>
+            </label>
+            <input type="radio" id="v1" name="accordion" class="hidden" checked>
+            <div class="content rounded-b-xl shadow-md shadow-y/35 z-10 bg-w ">
+              <div
+                class="relative px-5 pt-9 pb-5 flex-col text-d/65 text-sm bg-[url('/assets/imgs/panel.svg')] bg-contain bg-center bg-no-repeat">
+                <p>The cost depends on:</p>
+                <ul class="flex flex-col items-start justify-start gap-0.5 pl-3.5">
+                  <li class="list-item list-disc list-outside leading-none">Power usage (lights only, appliances,
+                    business equipment)</li>
+                  <li class="list-item list-disc list-outside leading-none">Battery size</li>
+                  <li class="list-item list-disc list-outside leading-none">Type of inverter</li>
+                </ul>
+                <p>We offer affordable packages and design systems based on your budget.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion w-full flex flex-col">
+            <label for="v2" class="w-full items-center justify-between p-3.5 rounded-t-xl bg-w border border-y z-20">
+              <h4 class="text-g font-bold">Can solar work during rainy seasons?</h4>
+              <span class="text-xl text-g hgi hgi-stroke hgi-add-01"></span>
+              <span class="text-xl text-g hgi hgi-stroke hgi-remove-01"></span>
+            </label>
+            <input type="radio" id="v2" name="accordion" class="hidden">
+            <div class="content rounded-b-xl shadow-md shadow-y/35 z-10 bg-w ">
+              <div
+                class="relative px-5 pt-9 pb-5 flex-col text-d/65 text-sm bg-[url('/assets/imgs/panel.svg')] bg-contain bg-center bg-no-repeat">
+                <p><b>Yes</b>. Solar systems are designed to store power in batteries, so you still have electricity
+                  even when it’s cloudy or raining.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion w-full flex flex-col">
+            <label for="v3" class="w-full items-center justify-between p-3.5 rounded-t-xl bg-w border border-y z-20">
+              <h4 class="text-g font-bold">Will solar completely replace UMEME?</h4>
+              <span class="text-xl text-g hgi hgi-stroke hgi-add-01"></span>
+              <span class="text-xl text-g hgi hgi-stroke hgi-remove-01"></span>
+            </label>
+            <input type="radio" id="v3" name="accordion" class="hidden">
+            <div class="content rounded-b-xl shadow-md shadow-y/35 z-10 bg-w ">
+              <div
+                class="relative px-5 pt-9 pb-5 flex-col text-d/65 text-sm bg-[url('/assets/imgs/panel.svg')] bg-contain bg-center bg-no-repeat">
+                <p>It definitely can.</p>
+                <ul class="flex flex-col items-start justify-start gap-0.5 pl-3.5">
+                  <li class="list-item list-disc list-outside leading-none">Some customers go fully <b>off-grid</b>.
+                  </li>
+                  <li class="list-item list-disc list-outside leading-none">Others use <b>hybrid systems</b> <u>(Solar +
+                      UMEME back-up)</u>.</li>
+                </ul>
+                <p>We help you choose what works best.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion w-full flex flex-col">
+            <label for="v4" class="w-full items-center justify-between p-3.5 rounded-t-xl bg-w border border-y z-20">
+              <h4 class="text-g font-bold">Do you provide warranty and support?</h4>
+              <span class="text-xl text-g hgi hgi-stroke hgi-add-01"></span>
+              <span class="text-xl text-g hgi hgi-stroke hgi-remove-01"></span>
+            </label>
+            <input type="radio" id="v4" name="accordion" class="hidden">
+            <div class="content rounded-b-xl shadow-md shadow-y/35 z-10 bg-w ">
+              <div
+                class="relative px-5 pt-9 pb-5 flex-col text-d/65 text-sm bg-[url('/assets/imgs/panel.svg')] bg-contain bg-center bg-no-repeat">
+                <p>Definitely we do.</p>
+                <ul class="flex flex-col items-start justify-start gap-0.5 pl-3.5">
+                  <li class="list-item list-disc list-outside leading-none">Equipment warranties.</li>
+                  <li class="list-item list-disc list-outside leading-none">Installation warranty.</li>
+                  <li class="list-item list-disc list-outside leading-none">On-going technical support.</li>
+                </ul>
+                <p>We do not disappear after installation</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordion w-full flex flex-col">
+            <label for="v5" class="w-full items-center justify-between p-3.5 rounded-t-xl bg-w border border-y z-20">
+              <h4 class="text-g font-bold">How long does installation take?</h4>
+              <span class="text-xl text-g hgi hgi-stroke hgi-add-01"></span>
+              <span class="text-xl text-g hgi hgi-stroke hgi-remove-01"></span>
+            </label>
+            <input type="radio" id="v5" name="accordion" class="hidden">
+            <div class="content rounded-b-xl shadow-md shadow-y/35 z-10 bg-w ">
+              <div
+                class="relative px-5 pt-9 pb-5 flex-col text-d/65 text-sm bg-[url('/assets/imgs/panel.svg')] bg-contain bg-center bg-no-repeat">
+                <p>Most systems are installed in 1–3 days, depending on size and complexity.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="blog" class="w-full flex-col items-start justify-start gap-3.5">
+        <div class="w-full flex-col items-start justify-start gap-0.5">
+          <p class="text-g font-medium uppercase">// blog</p>
+          <h3 class="text-4xl text-d font-bold capitalize">catch up on today's updates & top stories</h3>
+        </div>
+
+        <div id="carousel"
+          class="w-full h-full grid grid-flow-col auto-cols-[100%] gap-5 snap-x snap-mandatory overflow-x-auto px-20">
+          <article
+            class="carousel-slide relative w-full aspect-[3/4] flex-col items-start justify-end gap-7 snap-center snap-always rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/assets/imgs/.jpg')]">
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-d/35 via-d/15 to-d/5"></div>
+            <time datetime="2025-12-21" class="text-xs text-w/75">21 <sup>st</sup> December 2025</time>
+            <p class="text-lg text-w font-bold"></p>
+          </article>
+          <article
+            class="carousel-slide relative w-full aspect-[3/4] flex-col items-start justify-end gap-7 snap-center snap-always rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/assets/imgs/.jpg')]">
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-d/35 via-d/15 to-d/5"></div>
+            <time datetime="2025-12-11" class="text-xs text-w/75">11 <sup>th</sup> December 2025</time>
+            <p class="text-lg text-w font-bold"></p>
+          </article>
+          <article
+            class="carousel-slide relative w-full aspect-[3/4] flex-col items-start justify-end gap-7 snap-center snap-always rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/assets/imgs/.jpg')]">
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-d/35 via-d/15 to-d/5"></div>
+            <time datetime="2025-12-01" class="text-xs text-w/75">01 <sup>st</sup> December 2025</time>
+            <p class="text-lg text-w font-bold"></p>
+          </article>
+          <article
+            class="carousel-slide relative w-full aspect-[3/4] flex-col items-start justify-end gap-7 snap-center snap-always rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/assets/imgs/.jpg')]">
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-d/35 via-d/15 to-d/5"></div>
+            <time datetime="2025-11-25" class="text-xs text-w/75">25 <sup>th</sup> November 2025</time>
+            <p class="text-lg text-w font-bold"></p>
+          </article>
+          <article
+            class="carousel-slide relative w-full aspect-[3/4] flex-col items-start justify-end gap-7 snap-center snap-always rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('/assets/imgs/.jpg')]">
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gradient-to-t from-d/35 via-d/15 to-d/5"></div>
+            <time datetime="2025-11-17" class="text-xs text-w/75">17 <sup>th</sup> November 2025</time>
+            <p class="text-lg text-w font-bold"></p>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
