@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,7 @@
   margin: 0;
   box-sizing: border-box;
   transition: all 350ms ease-in-out;
-  font-family: "SUSE";
+  font-family: "Kode Mono";
 }
 
 html {
@@ -49,7 +49,7 @@ span {
 }
 
 section {
-  scroll-margin-block-start: 5rem;
+  scroll-margin-block-start: 3.925rem;
   min-height: 100dvh;
 }
 
@@ -80,6 +80,10 @@ nav {
   box-shadow: 0 10px 15px -5px #00796B37;
 }
 
+nav a:hover {
+  color: var(--g);
+}
+
 /* services */
 #works>div div .blocks {
   transform: translateY(100%);
@@ -101,19 +105,19 @@ nav {
 }
 
 /*** carousel and slides ***/
-/* #carousel { */
-/*   overflow-x: auto; */
-/*   overscroll-behavior-x: contain; */
-/*   scroll-snap-type: x mandatory; */
-/*   anchor-name: --carousel; */
-/**/
-/*   columns: 1; */
-/*   padding-bottom: 11px; */
-/**/
-/*   >.carousel-slide { */
-/*     scroll-snap-align: start; */
-/*   } */
-/* } */
+#carousel {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+
+  columns: 1;
+  padding-bottom: 11px;
+
+  >.carousel-slide {
+    scroll-snap-align: start;
+  }
+}
 
 /* #carousel { */
 /*   &::scroll-button(*) { */
