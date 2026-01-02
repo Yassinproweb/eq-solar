@@ -21,14 +21,5 @@ divs.addEventListener("click", () => {
 });
 
 
-// scroll behaviour of testimonials
-const slides = document.getElementById("slides")
-
-function next() {
-  slides.scrollBy({ left: slides.clientWidth, behavior: "smooth" })
-}
-
-function prev() {
-  slides.scrollBy({ left: -slides.clientWidth, behavior: "smooth" })
-}
-
+// date in copyright
+document.getElementById("date").textContent = new Date().getFullYear();
