@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/imgs/eqslogo.svg" />
+
+  <title>Equator Solar</title>
+
+  <!-- css -->
+  <link href="src/style.css" rel="stylesheet">
+
+  <!-- hugeicons -->
+  <link href="src/icons/icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 w-full items-center justify-between px-pw py-3 z-[1000]">
+    <div class="w-fit items-center justify-start gap-1">
+      <img src="/assets/imgs/eqslogo.svg" alt="company logo" class="size-9">
+      <h3 class="text-xl text-g font-bold">Equator<span class="text-y">Solar</span></h3>
+    </div>
+
+    <div class="divs items-center justify-end font-bold">
+      <button id="open" class="text-3xl text-g text-center">
+        <i class="hgi hgi-stroke hgi-menu-11"></i>
+      </button>
+      <button id="close" class="text-3xl text-g text-center hidden">
+        <i class="hgi hgi-stroke hgi-cancel-01"></i>
+      </button>
+    </div>
+
+    <nav
+      class="absolute right-[5vw] top-24 w-fit flex-col items-center justify-center gap-0 px-7 py-5 rounded-2xl bg-w translate-x-72">
+      <a href="/index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#values">Values</a>
+      <a href="#team">Team</a>
+      <a href="/quote.html">Quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="w-full flex-col items-start justify-end gap-7 px-pw py-py">
+      <div class="w-full flex-col items-start justify-end gap-5 pt-[13vh]">
+        <div class="w-full flex-col items-start justify-center gap-2.5">
+          <h1 class="text-4xl text-d font-bold capitalize">powering a <span class="text-g">brighter</span> future</h1>
+
+          <p class="text-d">Join us in building a sustainable, cost-effective future powered by the sun.</p>
+
+          <img src="/assets/imgs/gallery.jpg" alt="green energy, solar energy"
+            class="w-full aspect-[4/3] object-cover object-center">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="w-full grid grid-flow-row items-center justify-start gap-9 px-pw py-py">
+      <div class="w-full flex-col items-start justify-start gap-9">
+        <div class="w-full flex-col items-start justify-start gap-3.5">
+          <p class="text-g font-medium uppercase">// about us</p>
+          <h3 class="text-4xl text-d font-bold capitalize">innovating solar solutions for a greener tomorrow</h3>
+          <p class="text-sm text-d/75"><span class="text-g font-bold">Equator<span class="text-y">Solar</span></span> is
+            the leading provider of solar energy solutions, helping homeowners, businesses and communities transition to
+            clean renewable power. Our cutting-edge technology and expert team ensure maximum energy efficiency,
+            long-term savings and environmental impact reduction.
+          </p>
+        </div>
+
+        <div class="w-full items-center justify-between gap-9">
+          <span class="w-fit max-w-1/4 flex flex-col items-center justify-center gap-0.5">
+            <span class="text-2xl text-g text-center font-extrabold">10k+</span>
+            <span class="text-xs text-d text-center leading-[1.1]">Solar<br>Installations</span>
+          </span>
+
+          <span class="w-fit max-w-1/4 flex flex-col items-center justify-center gap-0.5">
+            <span class="text-2xl text-g text-center font-extrabold">100k+</span>
+            <span class="text-xs text-d text-center leading-[1.1]">Tons of CO<sub>2</sub><br>Reduced</span>
+          </span>
+
+          <span class="w-fit max-w-1/4 flex flex-col items-center justify-center gap-0.5">
+            <span class="text-2xl text-g text-center font-extrabold">70%+</span>
+            <span class="text-xs text-d text-center leading-[1.1]">Energy Income<br>Saved</span>
+          </span>
+        </div>
+      </div>
+
+      <img src="/assets/imgs/about.jpg" alt="green energy, solar energy"
+        class="w-full aspect-[4/3] object-cover object-center">
+    </section>
+
+    <section id="values" class="w-full flex-col items-center justify-start gap-9 px-pw py-py">
+      <div class="w-full flex-col items-start justify-start gap-7">
+        <div class="w-full flex-col items-start justify-start gap-3.5">
+          <p class="text-g font-medium uppercase">// values</p>
+          <h3 class="text-4xl text-d font-bold capitalize">our values at <span class="text-g font-bold">Equator<span
+                class="text-y">Solar</span></span> eco-energy solutions</h3>
+        </div>
+        <p class="text-base text-d/75">At <span class="text-g font-bold">Equator<span
+              class="text-y">Solar</span></span>, our values are the driving force behind everything we do.</p>
+      </div>
+
+      <div class="w-full grid grid-flow-row grid-cols-1 items-start justify-start gap-7">
+        <div class="w-full flex-col items-start justify-start gap-11 px-3 py-5 bg-y">
+          <span class="hgi hgi-stroke hgi-idea-01 text-7xl text-g font-light"></span>
+
+          <div class="w-full flex-col items-start justify-start gap-3">
+            <h4 class="text-w text-3xl font-bold capitalize">Innovation</h4>
+            <p class="text-xs text-d/75">Constantly evolving with advanced solar technology and smart energy solutions.
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex-col items-start justify-start gap-11 px-3 py-5 bg-y">
+          <span class="hgi hgi-stroke hgi-eco-energy text-7xl text-g font-light"></span>
+
+          <div class="w-full flex-col items-start justify-start gap-3">
+            <h4 class="text-w text-3xl font-bold capitalize">sustainability</h4>
+            <p class="text-xs text-d/75">Dedicated to reducing carbon footprints and promoting renewable energy.</p>
+          </div>
+        </div>
+        <div class="w-full flex-col items-start justify-start gap-11 px-3 py-5 bg-y">
+          <span class="hgi hgi-stroke hgi-shield-energy text-7xl text-g font-light"></span>
+
+          <div class="w-full flex-col items-start justify-start gap-3">
+            <h4 class="text-w text-3xl font-bold capitalize">commitment</h4>
+            <p class="text-xs text-d/75">Prioritizing seamless installation, personalised support and long-term
+              satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="w-full flex-col items-center justify-start gap-9 px-pw py-py">
+      <div class="w-full flex-col items-start justify-start gap-5">
+        <div class="w-full flex-col items-start justify-start gap-2.5">
+          <p class="text-g font-medium uppercase">// team</p>
+          <h3 class="text-4xl text-d font-bold capitalize">meet our best team</h3>
+        </div>
+        <p class="text-base text-d/75">Passionate experts driving the future of solar energy.</p>
+      </div>
+
+      <img src="/assets/imgs/team.jpg" alt="green energy, solar energy"
+        class="w-full aspect-[4/3] object-cover object-center">
+    </section>
+  </main>
+
+  <footer class="w-full flex-col items-start justify-start gap-3 px-pw py-9 bg-d">
+    <div class="w-full grid grid-flow-row items-start justify-start gap-9">
+      <div class="w-full flex-col items-start justify-start gap-5">
+        <div class="w-fit items-center justify-start gap-1">
+          <img src="/assets/imgs/eqslogo.svg" alt="company logo" class="size-11">
+          <h2 class="text-2xl text-g font-bold">Equator<span class="text-y">Solar</span></h2>
+        </div>
+
+        <p class="text-sm text-w/85">What began as a simple idea grew into a mission -- to harness the earth's most
+          abundant resources i.e. sunlight to power a brighter tomorrow. <br><br>112 Solar Drive, Suite 200 Los Angeles,
+          CA, 11012</p>
+
+        <div class="w-full flex-col items-start justify-start gap-2">
+          <h4 class="text-xl text-w font-bold">Follow Us</h4>
+
+          <div class="w-full items-center justify-start gap-3">
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-facebook-02"></i>
+            </a>
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-instagram"></i>
+            </a>
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-whatsapp-business"></i>
+            </a>
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-new-twitter"></i>
+            </a>
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-tiktok"></i>
+            </a>
+            <a href="https://" target="_blank"
+              class="size-11 flex items-center justify-center text-2xl text-d rounded-full bg-y hover:opacity-70">
+              <i class="hgi hgi-stroke hgi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex-col items-start justify-start gap-7">
+        <div class="w-full flex-col items-start justify-start gap-1.5">
+          <h4 class="text-xl text-w font-bold">Quick Links</h4>
+
+          <div class="w-full flex-col items-start justify-start gap-1.5 pl-2.5">
+            <a href="/index.html" class="text-sm text-w/75 hover:text-y">Company</a>
+            <a href="#about" class="text-sm text-w/75 hover:text-y">About</a>
+            <a href="#projects" class="text-sm text-w/75 hover:text-y">Projects</a>
+            <a href="#team" class="text-sm text-w/75 hover:text-y">Team</a>
+            <a href="/quote.html" class="text-sm text-w/75 hover:text-y">Consultation</a>
+          </div>
+        </div>
+
+        <div class="w-full flex-col items-start justify-start gap-1.5">
+          <h4 class="text-xl text-w font-bold">Contact Us</h4>
+
+          <div class="w-full flex-col items-start justify-start gap-1.5 pl-2.5">
+            <a href="tel:+256748592974" class="text-sm text-w/75 w-fit items-center justify-start gap-2.5 hover:text-y">
+              <i class="hgi hgi-stroke hgi-call-02"></i>
+              +256 (0) 748 592 974
+            </a>
+            <a href="mailto:equatorsolar@gmail.com"
+              class="text-sm text-w/75 w-fit items-center justify-start gap-2.5 hover:text-y">
+              <i class="hgi hgi-stroke hgi-mail-02"></i>
+              equatorsolar@gmail.com
+            </a>
+            <a href="sms:+256748592974?&body=Hello%20EquatorSolar%0a%0a"
+              class="text-sm text-w/75 w-fit items-center justify-start gap-2.5 hover:text-y">
+              <i class="hgi hgi-stroke hgi-message-multiple-01"></i>
+              SMS
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex-col items-start justify-start gap-5">
+        <h4 class="text-xl text-w font-bold">Subscribe for Updates</h4>
+
+        <p class="text-base text-w/75">Subscribe to our newsletter for the latest solar energy trends, exclusive offers
+          and expert insights.</p>
+
+        <div class="w-full items-center justify-between gap-3">
+          <input type="email" name="sub-email" id="sub-email"
+            class="w-full px-5 py-3 text-d/75 text-sm rounded-full bg-w placeholder:text-d/35"
+            placeholder="Enter your email">
+          <button type="submit" class="w-fit shrink-0 px-5 py-3 text-d text-sm rounded-full bg-y">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full items-center justify-center pt-9 border-t border-w/25">
+      <p class="text-sm text-w/85">&copy;<span id="date" class="font-bold"></span> <span
+          class="text-g font-bold">Equator<span class="text-y">Solar</span></span>. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    // header and navbar
+    const navbar = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 45) {
+        navbar.classList.add("diff");
+      } else {
+        navbar.classList.remove("diff");
+      };
+    });
+
+    const openM = document.getElementById("open"),
+      closeM = document.getElementById("close"),
+      divs = document.querySelector(".divs"),
+      nav = document.querySelector("nav");
+
+    divs.addEventListener("click", () => {
+      openM.classList.toggle("hidden");
+      closeM.classList.toggle("hidden");
+      nav.classList.toggle("translate-x-72");
+    });
+
+
+    // date in copyright
+    document.getElementById("date").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
