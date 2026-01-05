@@ -43,6 +43,7 @@
       <a href="/index.html">Home</a>
       <a href="#about">About</a>
       <a href="#values">Values</a>
+      <a href="#gallery">Gallery</a>
       <a href="#team">Team</a>
       <a href="/quote.html">Quote</a>
     </nav>
@@ -137,18 +138,64 @@
       </div>
     </section>
 
-    <section id="team" class="w-full flex-col items-center justify-start gap-9 px-pw py-py">
-      <div class="w-full flex-col items-start justify-start gap-5">
-        <div class="w-full flex-col items-start justify-start gap-2.5">
-          <p class="text-g font-medium uppercase">// team</p>
-          <h3 class="text-4xl text-d font-bold capitalize">meet our best team</h3>
+    <section class="w-full flex-col items-center justify-start gap-0">
+      <div id="gallery" class="w-full flex-col items-center justify-start gap-9 px-pw py-py bg-d">
+        <div class="w-full flex-col items-start justify-start gap-7">
+          <div class="w-full flex-col items-start justify-start gap-3.5">
+            <p class="text-y font-medium uppercase">// gallery</p>
+            <h3 class="text-4xl text-w font-bold capitalize">see the power of solar in action</h3>
+          </div>
+          <p class="text-base text-w/75">Explore our latest solar installations, innovative projects and sustainable
+            solutions making a difference in communities countrywide.</p>
         </div>
-        <p class="text-base text-d/75">Passionate experts driving the future of solar energy.</p>
+
+        <div class="w-full grid grid-cols-4 grid-rows-2 gap-1.5">
+          <img src="/assets/imgs/agriculture.jpg" alt="gallery project for solar installation"
+            class="w-full aspect-square object-center object-cover">
+          <img src="/assets/imgs/ev-chargers.jpg" alt="gallery project for solar installation"
+            class="w-full aspect-square object-center object-cover">
+          <img src="/assets/imgs/residential.jpg" alt="gallery project for solar installation"
+            class="w-full h-full aspect-square object-center object-cover col-start-3 col-end-5 row-start-1 row-end-3">
+          <img src="/assets/imgs/commercially.jpg" alt="gallery project for solar installation"
+            class="w-full aspect-square object-center object-cover">
+          <img src="/assets/imgs/cust-hs.jpg" alt="gallery project for solar installation"
+            class="w-full aspect-square object-center object-cover">
+        </div>
       </div>
 
-      <img src="/assets/imgs/team.jpg" alt="green energy, solar energy"
-        class="w-full aspect-[4/3] object-cover object-center">
+      <div id="team" class="w-full flex-col items-center justify-start gap-9 px-pw py-py">
+        <div class="w-full flex-col items-start justify-start gap-5">
+          <div class="w-full flex-col items-start justify-start gap-2.5">
+            <p class="text-g font-medium uppercase">// team</p>
+            <h3 class="text-4xl text-d font-bold capitalize">meet our best team</h3>
+          </div>
+          <p class="text-base text-d/75">Passionate experts driving the future of solar energy.</p>
+        </div>
+
+        <img src="/assets/imgs/team.jpg" alt="green energy, solar energy"
+          class="w-full aspect-[4/3] object-cover object-center">
+      </div>
     </section>
+
+    <div id="quote"
+      class="relative w-full flex-col items-center justify-start gap-9 px-pw py-py bg-[url('/assets/imgs/switch.jpg')] bg-cover bg-center">
+      <div class="absolute top-0 left-0 w-full h-full bg-black/45 z-10"></div>
+      <div class="w-full flex-col items-center justify-center gap-3.5 z-30">
+        <h2 class="text-4xl text-w text-center leading-none font-bold capitalize">ready to make the switch to solar?
+        </h2>
+
+        <p class="text-w/75 text-sm text-center">Join thousands of home owners and busineses embracing clean,
+          renewable energy.</p>
+
+        <a href="/quote.html#name" id="quote"
+          class="text-w text-center text-base font-medium p-2.5 pl-3.5 capitalize rounded-full flex items-center justify-between gap-2.5 bg-g">
+          <span>get&nbsp;free&nbsp;consultation</span>
+          <span class="arrow flex items-center justify-center p-1.5 rounded-full text-g text-2xl bg-w">
+            <i class="hgi hgi-stroke hgi-arrow-up-right-01"></i>
+          </span>
+        </a>
+      </div>
+    </div>
   </main>
 
   <footer class="w-full flex-col items-start justify-start gap-3 px-pw py-9 bg-d">

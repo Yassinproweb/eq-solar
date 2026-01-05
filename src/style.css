@@ -49,12 +49,17 @@ span {
 
 section {
   scroll-margin-block-start: 3.925rem;
-  min-height: 100dvh;
+  min-height: 100lvh;
 }
 
 #faqs,
 #blog {
   scroll-margin-block-start: 5.5rem;
+}
+
+#team,
+#gallery {
+  scroll-margin-block-start: 3.5rem;
 }
 
 li {
@@ -90,6 +95,18 @@ nav {
 
 nav a:hover {
   color: var(--g);
+}
+
+
+/* arrow icon style */
+#consultation:hover .arrow,
+#quote:hover .arrow {
+  background: var(--d);
+}
+
+#consultation:hover .arrow i,
+#quote:hover .arrow i {
+  color: var(--y);
 }
 
 /* services */
