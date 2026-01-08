@@ -40,7 +40,7 @@
 
     <nav
       class="absolute right-[5vw] top-24 w-fit flex-col items-center justify-center gap-0 px-7 py-5 rounded-2xl bg-w translate-x-72">
-      <a href="/index.html">Home</a>
+      <a href="/">Home</a>
       <a href="/company.html">Company</a>
       <a href="#">Quote</a>
     </nav>
@@ -130,8 +130,7 @@
         </div>
 
         <div class="w-full flex-col items-start justify-start gap-7">
-          <form action="#" method="post" id="form"
-            class="w-full flex-col items-center justify-start gap-5 px-5 py-9 bg-w/95">
+          <form id="form" class="w-full flex-col items-center justify-start gap-5 px-5 py-9 bg-w/95">
             <div class="w-full flex-col items-start justify-start gap-1.5">
               <label for="name" class="text-xs text-d font-medium">Enter your name</label>
               <input type="text" id="name" name="name"
@@ -165,11 +164,14 @@
                 Other Solar
               </label>
             </div>
-            <div class="w-full flex-col items-start justify-start gap-1.5">
+            <div class="relative w-full h-fit flex-col items-start justify-start gap-1.5">
               <label for="message" class="text-xs text-d font-medium">Enter your message</label>
               <textarea id="message" name="message"
-                class="w-full text-xs text-d/75 px-5 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
+                class="w-full h-40 text-xs text-d/75 px-5 py-3.5 pb-7 border border-d/25 rounded-sm placeholder:text-d/35 resize-none"
                 placeholder="Type your message here..." required minlength="100" maxlength="250"></textarea>
+              <p class="absolute bottom-2 right-3 text-[10px] text-d font-bold">
+                <span id="count" class="text-d/35 font-normal">0</span>/250
+              </p>
             </div>
             <div class="w-full flex-col items-start justify-start gap-1.5">
               <input type="submit" name="submit" value="Submit Info"
@@ -313,6 +315,48 @@
 
     // date in copyright
     document.getElementById("date").textContent = new Date().getFullYear();
+
+
+    // textarea characters counter
+    const textarea = document.getElementById("message");
+    const count = document.getElementById("count");
+
+    textarea.addEventListener("input", () => {
+      count.textContent = textarea.value.length;
+    });
+
+    const forms = document.getElementById("form");
+    forms.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("telephone").value;
+      const project = document.querySelector('input[name = "project"]:checked').value;
+      const message = document.getElementById("message").value;
+
+      const whatsappNumber = "256748592974";
+
+      const text = `
+        Name: *${name}*
+        Email: _${email}_
+        Phone: *${phone}*
+        Solar Type: *${project}*
+        Message: >${message}
+      `.trim();
+
+      const encodedText = encodeURIComponent(text);
+
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+      // Open WhatsApp
+      window.open(whatsappURL, "_blank");
+
+      // Redirect to homepage after 1.5 seconds
+      setTimeout(() => {
+        window.location.href = "/thanks.html";
+      }, 1500);
+    });
   </script>
 </body>
 

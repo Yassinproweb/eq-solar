@@ -59,7 +59,8 @@ section {
 }
 
 #team,
-#gallery {
+#gallery,
+#form {
   scroll-margin-block-start: 3.5rem;
 }
 
@@ -241,6 +242,26 @@ textarea:not(:placeholder-shown) {
 
 textarea:not(:placeholder-shown):invalid {
   border-color: var(--r);
+}
+
+textarea:not(:placeholder-shown, :focus)+p>span {
+  font-weight: 700;
+}
+
+textarea:not(:placeholder-shown):valid+p>span {
+  color: var(--d);
+}
+
+textarea:not(:placeholder-shown):invalid+p>span {
+  color: var(--r);
+}
+
+textarea:focus:invalid+p>span {
+  color: var(--y);
+}
+
+textarea:focus:valid+p>span {
+  color: var(--d);
 }
 
 input:focus:invalid,
