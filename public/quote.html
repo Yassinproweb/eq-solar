@@ -337,7 +337,7 @@
 
       const whatsappNumber = "256748592974";
 
-      const text = `Name: *${name}*\nEmail: _${email}_\nPhone: *${phone}*\nSolar Type: *${project}*\n> ${message}`.trim();
+      const text = `Name: *${name}*\nEmail: _${email}_\nPhone: *${phone}*\nSolar Type: *${project.toUpperCase()}*\n> ${message}`.trim();
 
       const encodedText = encodeURIComponent(text);
 
