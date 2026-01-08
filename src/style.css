@@ -9,6 +9,7 @@
   --g: #00796B;
   --y: #C7D971;
   --w: #FDFFFE;
+  --r: #B91B00;
 }
 
 * {
@@ -217,4 +218,32 @@ nav a:hover {
 
 #carousel::-webkit-scrollbar-button {
   width: calc(25% - 40px);
+}
+
+
+/* input styling form actions */
+input,
+textarea {
+  outline: none;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: var(--d);
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: var(--r);
+}
+
+textarea:not(:placeholder-shown) {
+  border-color: var(--d);
+}
+
+textarea:not(:placeholder-shown):invalid {
+  border-color: var(--r);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+  border-color: var(--y);
 }

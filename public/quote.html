@@ -134,21 +134,21 @@
             class="w-full flex-col items-center justify-start gap-5 px-5 py-9 bg-w/95">
             <div class="w-full flex-col items-start justify-start gap-1.5">
               <label for="name" class="text-xs text-d font-medium">Enter your name</label>
-              <input type="text" id="name"
-                class="w-full text-xs text-d/75 px-7 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
-                placeholder="Enter your name" required>
+              <input type="text" id="name" name="name"
+                class="w-full text-xs text-d/75 px-5 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
+                placeholder="e.g. Equator Solar Group" required minlength="4">
             </div>
             <div class="w-full flex-col items-start justify-start gap-1.5">
               <label for="email" class="text-xs text-d font-medium">Enter your email</label>
-              <input type="text" id="email"
-                class="w-full text-xs text-d/75 px-7 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
-                placeholder="Enter your email" required>
+              <input type="email" id="email" name="email"
+                class="w-full text-xs text-d/75 px-5 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
+                placeholder="e.g. equatorsolar@gmail.com" required>
             </div>
             <div class="w-full flex-col items-start justify-start gap-1.5">
               <label for="telephone" class="text-xs text-d font-medium">Enter your phone number</label>
-              <input type="text" id="telephone"
-                class="w-full text-xs text-d/75 px-7 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
-                placeholder="Enter your phone number" required>
+              <input type="tel" id="telephone" name="telephone"
+                class="w-full text-xs text-d/75 px-5 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
+                placeholder="e.g. 0758185721 or +256758185721" required minlength="10">
             </div>
             <div class="w-full items-center justify-between gap-3.5">
               <label for="residential" class="text-xs text-d font-medium flex items-center justify-start gap-0.5">
@@ -165,6 +165,16 @@
                 Other Solar
               </label>
             </div>
+            <div class="w-full flex-col items-start justify-start gap-1.5">
+              <label for="message" class="text-xs text-d font-medium">Enter your message</label>
+              <textarea id="message" name="message"
+                class="w-full text-xs text-d/75 px-5 py-3.5 border border-d/25 rounded-sm placeholder:text-d/35"
+                placeholder="Type your message here..." required minlength="100" maxlength="250"></textarea>
+            </div>
+            <div class="w-full flex-col items-start justify-start gap-1.5">
+              <input type="submit" name="submit" value="Submit Info"
+                class="w-full text-xs text-y px-5 py-3.5 rounded-sm bg-d">
+            </div>
           </form>
         </div>
       </div>
@@ -172,8 +182,8 @@
       <div class="w-full items-center justify-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7395294327357!2d32.6107271!3d0.36008070000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbc0e64e8bbb%3A0x59df00e1041fdaf0!2sEquator%20Solar%20Systems%20Limited!5e0!3m2!1sen!2sug!4v1767625303465!5m2!1sen!2sug"
-          width="1080" height="720" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="w-full aspect-[3/2]"></iframe>
       </div>
     </section>
   </main>
