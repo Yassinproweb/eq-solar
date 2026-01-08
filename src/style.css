@@ -54,13 +54,13 @@ section {
 }
 
 #faqs,
-#blog {
+#blog,
+#form {
   scroll-margin-block-start: 5.5rem;
 }
 
 #team,
-#gallery,
-#form {
+#gallery {
   scroll-margin-block-start: 3.5rem;
 }
 
