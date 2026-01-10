@@ -6,6 +6,11 @@ export default {
     "./src/*.{js,html}",
   ],
   theme: {
+    screens: {
+      md: '',
+      lg: '1280px',
+      xl: '1440px',
+    },
     extend: {
       colors: {
         d: '#00291B',
